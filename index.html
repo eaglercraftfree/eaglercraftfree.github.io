@@ -1,938 +1,890 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 
-<title>Eaglercraft Github</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PR40CZ0VX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8PR40CZ0VX');
-</script>
-
-<meta name='description' content='Eaglercraft Github - Play Minecraft Unblocked in your browser! No downloads or launchers needed. Perfect for school Chromebooks—jump into Creative or Survival mode and start building now.' />
 
 
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="content-language" content="en">
+    <meta name="external" content="true">
+    <meta name="distribution" content="Global">
+    <meta http-equiv="audience" content="General">
 
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+   <title>Eaglercraft</title>
+
+  <meta name="description" content="Eaglercraft - Safe, school-friendly interactive entertainment that runs smoothly on classroom computers and Chromebooks, offering students quick, engaging experiences during downtime.">
 
 
-<style>
-.parent {
-    display: flex;
-    justify-content: center;
-    vertical-align: top;
-    color: 000000;
-    font-family: sans-serif;
-    font-size: 15px;
-    margin: 5px
-}
 
-.parent1 {
-    display: flex;
-    justify-content: center;
-    vertical-align: top;
-    color: 000000;
-    font-family: sans-serif;
-    font-size: 15px;
-    margin-top: 5px
-}
+     
+  <link rel="stylesheet" type="text/css" href="rs/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+ 
 
-@media screen and (max-width:800px) {
-    div.parent1 {
-        display: flex
+
+ <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-}
 
-body {
-    background-color: #faf5e8
-}
-
-a:link {
-    color: #009cff
-}
-
-a:visited {
-    color: #009cff
-}
-
-a:hover {
-    color: #ff69b4
-}
-
-div.left {
-    position: relative
-}
-
-@media screen and (min-width:100px) {
-    div.left {
-        display: none
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
     }
-}
 
-@media screen and (min-width:1025px) {
-    div.left {
-        width: 95px;
-        display: inline-block;
-        margin: 0
+    /*  */
+    .navbar {
+      background: #222;
+      padding: 10px 65px;
     }
-}
 
-@media screen and (min-width:1200px) {
-    div.left {
-        width: 95px;
-        display: inline-block;
-        margin: 0 0px 0 0
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
     }
-}
 
-@media screen and (min-width:1600px) {
-    div.left {
-        width: 110px;
-        margin: 0 0 0 56px;
-        display: inline-block
+    .menu > li {
+      position: relative; /*  */
     }
-}
 
-@media screen and (min-width:1700px) {
-    div.left {
-        width: 110px;
-        margin: 0 0 0 79px;
-        display: inline-block
+    .menu > li > a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      display: block;
+      font-size: 14px;
     }
-}
 
-div.hide {
-    position: relative
-}
-
-
-@media screen and (max-width:1152px) {
-    div.hidead {
-        display: none
+    .menu > li > a:hover {
+      background: #444;
+      border-radius: 4px;
     }
-}
 
-@media screen and (max-width:1919px) {
-    div.hidethumb {
-        display: none
+    /* Submenu  */
+    .submenu {
+      list-style: none;
+      position: absolute;
+      top: 100%;   /* item*/
+      left: 0;
+      min-width: 160px;
+      background: #fff;
+      padding: 8px 0;
+      border-radius: 4px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+      /* hide */
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: all 0.2s ease;
+      z-index: 10;
     }
-}
 
-
-@media screen and (min-width:1153px) {
-    div.hidead2 {
-        display: none
+    .submenu li a {
+      display: block;
+      padding: 8px 12px;
+      color: #333;
+      text-decoration: none;
+      font-size: 13px;
+      white-space: nowrap;
     }
-}
 
-
-
-@media screen and (max-width:1601px) {
-    div.hide {
-        display: none
+    .submenu li a:hover {
+      background: #f0f0f0;
     }
-}
 
-div.hide2 {
-    position: relative
-}
-
-@media screen and (max-width:1610px) {
-    div.hide2 {
-        display: none
+    /* hover */
+    .menu > li:hover .submenu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
     }
-}
-div.hide3 {
-    position: relative
-}
-
-@media screen and (max-width:1024px) {
-    div.hide3 {
-        display: none
-    }
-}
-
-div.hide4 {
-    position: relative
-}
-
-@media screen and (max-width:799px) {
-    div.hide4 {
-        display: none
-    }
-}
-
-div.leftunder {
-    position: relative
-}
-
-@media screen and (min-width:1400px) {
-    div.leftunder {
-        width: 300px;
-        margin: 0;
-        display: inline-block
-    }
-}
-
-div.left3 {
-    position: relative
-}
-
-@media screen and (min-width:1600px) {
-    div.left3 {
-        width: 210px;
-        margin: 0;
-        display: inline-block
-    }
-}
-
-div.game {
-    padding: 0
-}
-
-
-
-@media screen and (min-width: 100px) {
-  div.game {
-  width: 100vw;
-  height: 100vw;
-display: inline-block; /* Change this to block and see what happens */
-position:relative;
-  }
-}
-@media screen and (min-width:800px) {
-    div.game {
-        width: 600px;
-        height: 450px;
-        background-color: #000;
-        display: inline-block;
-        position: relative
-    }
-}
-
-@media screen and (min-width:1000px) {
-    div.game {
-        width: 800px;
-        height: 600px;
-        background-color: #000;
-        display: inline-block;
-        position: relative
-    }
-}
-
-
-
-@media screen and (min-width:1200px) {
-    div.game {
-        width: 666px;
-        height: 500px;
-        background-color: #000;
-        display: inline-block;
-        position: relative
-    }
-}
-@media screen and (min-width:1440px) {
-    div.game {
-        width: 760px;
-        height: 570px;
-        background-color: #000;
-        display: inline-block;
-        position: relative
-    }
-}
-@media screen and (min-width:1500px) {
-    div.game {
-        width: 706px;
-        height: 530px;
-        background-color: #000;
-        display: inline-block;
-        position: relative
-    }
-}
-
-
-
-@media screen and (min-width:1650px) {
-    div.game {
-        width: 800px;
-        height: 600px;
-        display: inline-block;
-        position: relative;
-        background-color: #000
-    }
-}
-
-@media screen and (min-width:1681px) {
-    div.game {
-        width: 1000px;
-        height: 750px;
-        display: inline-block;
-        position: relative;
-        background-color: #000
-    }
-}
-
-@media only screen and (max-width:799px) {
-    div.right {
-        display: none
-    }
-}
-
-@media screen and (min-width:800px) {
-    div.right {
-        width: 160px;
-        display: inline-block;
-        margin: 0 0 0 10px
-    }
-}
-
-@media screen and (min-width:1200px) {
-    div.right {
-        width: 320px;
-        display: inline-block;
-        margin: 0 0 0 10px
-    }
-}
-
-@media screen and (min-width:1300px) {
-    div.right {
-        width: 320px;
-        display: inline-block;
-        margin: 0 0 0 20px
-    }
-}
-
-@media screen and (min-width:1600px) {
-    div.right {
-        width: 320px;
-        display: inline-block;
-        margin: 0 0 0 15px
-    }
-}
-
-
-
-@media screen and (min-width:100px) {
-    div.right2 {
-        display: none
-    }
-}
-
-@media screen and (min-width:1600px) {
-    div.right2 {
-        width: 211px;
-        display: inline-block;
-        margin: 0 0 0 40px
-    }
-}
-
-@media screen and (min-width:100px) {
-    div.under {
-        width: 100%;
-        display: inline-block;
-        margin: 0
-    }
-}
-
-@media screen and (min-width:1601px) {
-    div.under {
-        width: 1845px;
-        display: inline-block;
-        margin: 0
-    }
-}
-
-.hvrbox,
-.hvrbox * {
-    box-sizing: border-box
-}
-
-.hvrbox {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    width: 100px;
-    margin-bottom: 6px;
-    margin-right: 3px
-}
-
-.hvrbox:hover {
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.05);
-    transition: transform .2s
-}
-
-.hvrbox img {
-    width: 90px;
-    height: 90px;
-    rounded-corners: -webkit-border-radius:9px;
-    -moz-border-radius: 9px;
-    border-radius: 15px
-}
-
-.hvrbox .hvrbox-layer_bottom {
-    display: block
-}
-
-.hvrbox .hvrbox-layer_top {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 85px;
-    height: 85px;
-    color: #fff;
-    padding: 15px;
-    -moz-transition: all .4s ease-in-out 0s;
-    -webkit-transition: all .4s ease-in-out 0s;
-    -ms-transition: all .4s ease-in-out 0s;
-    transition: all .4s ease-in-out 0s
-}
-
-.hvrbox.active .hvrbox-layer_top,
-.hvrbox:hover .hvrbox-layer_top {
-    opacity: 1
-}
-
-.hvrbox .hvrbox-text {
-    font-family: sans-serif;
-    font-weight: 800;
-    text-align: center;
-    font-size: 12px;
-    display: inline-block;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    -moz-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
-}
-
-.hvrbox .hvrbox-text_mobile {
-    font-size: 15px;
-    border-top: 1px solid #b3b3b3;
-    border-top: 1px solid rgba(179, 179, 179, .7);
-    margin-top: 5px;
-    padding-top: 2px;
-    display: none
-}
-
-.hvrbox.active .hvrbox-text_mobile {
-    display: block
-}
-
-.adslot3 {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    width: 745px;
-    height: 93px;
-    padding: 0 5px 5px 5x
-}
-
-@media screen and (max-width:1151px) {
-    div.adslot3 {
-        display: none
-    }
-}
-
-.adslot4 {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    width: 423px;
-    height: 93px;
-    padding: 0 5px 5px 5x
-}
-
-.adslot5 {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    width: 103px;
-    height: 100px;
-    padding: 0 5px 5px 5x
-}
-
-
-
-
-@-webkit-keyframes basic {
-    0% {
-        opacity: 0
-    }
-    100% {
-        opacity: 1
-    }
-}
-
-@keyframes basic {
-    0% {
-        opacity: 0
-    }
-    100% {
-        opacity: 1
-    }
-}
-
-.basic {
-    -webkit-animation-name: basic;
-    animation-name: basic
-}
-
-
-
-div.under2 {
-}
-
-@media screen and (min-width: 100px) {
-  div.under2 {
-  width: 90%;
-display: inline-block; /* Change this to block and see what happens */
-position:relative;
-  margin: 0px 0px 5px 0px;
-  padding: 20px;
-font-family: 'verdana', sans-serif;
-      color: #002b50;
-background-color: white;
-    border-radius: 15px;
-
-  }
-}
-@media screen and (min-width: 1024px) {
-  div.under2 {
-  width: 80%;
-display: inline-block; /* Change this to block and see what happens */
-position:relative;
-  margin: 0px 0px 5px 0px;
-  padding: 20px;
-font-family: 'verdana', sans-serif;
-      color: #002b50;
-background-color: white;
-    border-radius: 15px;
-
-  }
-}
-
-body {
-    background: #faf5e8;
-    margin: 0;
-    font-size: 10px
-}
-
-@media screen and (max-width:1280px) {
-    div.hide5 {
-        display: none
-    }
-}
-@media screen and (max-width:1440px) {
-    div.hide6 {
-        display: none
-    }
-}
-</style>
-
-
+  </style>
 
 
 
 </head>
-<body>
 
+<body><!--MENU-->
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="p-r d-flex sp al header-bar">
+                <div class="bar-logo">
+                    <a class="logo-text" href="/">Eaglercraft</a>
+                </div>
+<!--                 <nav class="navigation">
+                    <ul>
+                                                    <li>
+                                <a class="menu-link" href="/drive-mad">
+                                    <span class="text-menu-link">New</span>
+                                </a>
+                            </li>
+                                                    <li>
+                                <a class="menu-link" href="/escape-road">
+                                    <span class="text-menu-link">Popular</span>
+                                </a>
+                            </li>
+                                                    <li>
+                                <a class="menu-link" href="/escape-road-2">
+                                    <span class="text-menu-link">xxx</span>
+                                </a>
+                            </li>
+                    </ul>
 
-  <style>
-    header {
-      background-color: #1f252d;
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -4px rgba(0, 0, 0, 0.1);
-      padding: 10px 20px;
-      margin-bottom: 6px;
-  font-family: sans-serif;
-
-    }
-
-    header .wrapper {
-      max-width: 975px;
-      margin: 5px auto;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-
-    }
-
-    header .logo img {
-      width: 200px;
-height: 42px;
-      margin: -10px 0px;
-      display: block;
-    }
-
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 100%;
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #1f252d;
-      padding: 20px;
-      transition: left 0.3s;
-    }
-
-    .navbar.show {
-      left: 0 !important;
-      position: relative;
-      display: grid;
-      gap: 50px;
-      justify-items: center;
-    }
-
-    .hide-scroll {
-      overflow: hidden;
-    }
-
-    .navbar ul {
-      all: unset;
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 25px;
-    }
-
-    .navbar ul a {
-      all: unset;
-      color: #faefb7;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    .navbar ul a:hover {
-      color: #faefb7;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-    }
-
-    .close-nav {
-      text-align: right;
-      margin-bottom: 20px;
-      position: absolute;
-      right: 0;
-      top: -50px;
-    }
-
-    .close-nav button {
-      all: unset;
-      background: #696c71;
-      /* font-size: 42px; */
-      cursor: pointer;
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      padding: 15px;
-      border-radius: 3px;
-      color: #faefb7;
-    }
-
-    .close-nav button:hover {
-      color: #222222;
-      background: white;
-    }
-
-    .menu-bar button {
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background: #696c71;
-      height: 50px;
-      width: 50px;
-      padding: 5px 10px;
-      cursor: pointer;
-      border-radius: 3px;
-     color: #faefb7;
-    }
-
-    .menu-bar button:hover {
-      background: white;
-    }
-
-    .menu-bar button:hover i {
-      border-color: #222222;
-    }
- 
-
-    @media screen and (min-width: 1025px) {
-
-
-      .navbar {
-        all: unset;
-        display: flex;
-        align-items: center;
-        gap: 60px;
-      }
-
-      .navbar ul {
-        flex-direction: row;
-        gap: 20px;
-      }
-
-      .navbar ul a {
-        font-family: sans-serif;
-        font-size: 16px;
-        font-style: normal;
-      }
-
-      .close-nav,
-      .menu-bar {
-        display: none;
-      }
-
-      .navbar.show {
-        left: 0 !important;
-        position: relative;
-        display: flex;
-        gap: 50px;
-        justify-items: center;
-      }
-    }
-
-
-    @media screen and (max-width: 1200px) and (min-width: 1025px) {
-      header .wrapper {
-        display: flex;
-        flex-wrap: nowrap;
-      }
-
-      .navbar {
-        all: unset;
-        display: flex;
-        gap: 10px;
-        align-items: center;
-      }
-    }
-  </style>
-  <header>
-    <div class="wrapper">
-      <div class="logo">
-        <a href="/" style="font-size: 18px;">Eaglercraft Github</a>
-      </div>
-      <div class="navbar">
-        <div class="close-nav"><button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 384 512" fill="currentColor">
-  <path d="M310.6 361.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L192 301.3l-73.4 73.4c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l73.4-73.4-73.4-73.4c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l73.4 73.4 73.4-73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L237.3 256l73.4 73.4z"/>
-</svg>
-</button></div>
-        <nav>
-          <ul>
-            <li><a target="_blank" href="https://vex7online.github.io/">Alt link #1</a></li>
-            <li><a  target="_blank" href="https://paper-io.gitlab.io/">Alt link #2</a></li>
-            <li><a target="_blank"  href="https://moto-x3monline.github.io/">Alt link #3</a></li>
-         
-        
-          </ul>
-        </nav>
-       
-      </div>
-      <div class="menu-bar">
-       <button><svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <path d="M3 6h18M3 12h18M3 18h18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</button>
-
-      </div>
-    </div>
-  </header>
-  <!-- header -->
-  
+                </nav>
+ -->
 
 
 
- 
+         <div style="cursor:pointer;" onclick="location.href='/'">
 
-<div class="parent1">
+          </div>
+            <center>
+            <strong class="vibrate-warning nomobile" style="padding-top: 27px;" >PRESS CTRL+Q TO HIDE YOUR SCREEN</strong>
+          </center>
+
+          <style>
+            .vibrate-warning {
+              animation: vibrate 0.4s infinite;
+              display: inline-block;
+            }
+
+            @keyframes vibrate {
+              0% { transform: translate(0); }
+              20% { transform: translate(-1px, 1px); }
+              40% { transform: translate(-1px, -1px); }
+              60% { transform: translate(1px, 1px); }
+              80% { transform: translate(1px, -1px); }
+              100% { transform: translate(0); }
+            }
+          </style>
 
 
 
-<div class="parent">
-
-    <div class="under2">
-        <center>
-
-            <div><h1>Eaglercraft Github</h1></div>
-
-            <div class="hvrbox hide3">
-            <a target="_blank" href="eaglercraft" class="skip-preloader"><img src="eaglercraft.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a></div>
 
 
-        </center>
 
+  <nav class="navbar">
+    <ul class="menu">
 
     
+      <li><a href="/classroom/new.html">New</a></li>
+      <li><a href="/classroom/popular.html">Hot</a></li>
+      <li><a href="/classroom/driving.html">Driving</a></li>
+      <li>
+        <a href="#">More</a>
+        <ul class="submenu">
+    
+          <li><a href="/classroom/shooting.html">Shooting</a></li>
+          <li><a href="/classroom/car.html">Car</a></li>
+          <li><a href="/classroom/racing.html">Racing</a></li>
+          <li><a href="/classroom/sports.html">Sports</a></li>
+          <li><a href="/classroom/multiplayer.html">Multiplayer</a></li>
+          <li><a href="/classroom/2-player.html">2 Player</a></li>
+          <li><a href="/classroom/skill.html">Skill</a></li>
+          <li><a href="/classroom/running.html">Running</a></li>
+          <li><a href="/classroom/moto.html">Moto</a></li>
+          <li><a href="/classroom/adventure.html">Adventure</a></li>
+          <li><a href="/classroom/3d.html">3D</a></li>
+          <li><a href="/classroom/puzzle.html">Puzzle</a></li>
+          <li><a href="/classroom/simulation.html">Simulation</a></li>
+          <li><a href="/classroom/management.html">Management</a></li>
+          <li><a href="/classroom/survival.html">Survival</a></li>
+          <li><a href="/classroom/strategy.html">Strategy</a></li>
+          <li><a href="/classroom/girls.html">For Girls</a></li>
+          <li><a href="/classroom/animal.html">Animal</a></li>
+          <li><a href="/classroom/action.html">Action</a></li>
+    
+        
+
+      
+    </ul>
+  </nav>
+
+
+
+
+                <div class="center-box merge_icon icon-menu-mobile">
+                    <svg fill="#555" height="24" viewBox="0 -21 384 384" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m362.667969 0h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
+                        </path>
+                        <path d="m362.667969 128h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
+                        </path>
+                        <path d="m362.667969 256h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!--Mobil MENU-->
+
+    <!--END Mobile menu-->
+</header>
+<!--END MENU--><!--GAME PLAY-->
+<div id="game-page" class="main">
+    <div class="container">
+        <div class="row-flex">
+            <div class="main-flex">
+
+
+  
+
+                <br/>
+
+
+
+
+
+                <div class="row"> <!-- H2 -->
+                    <div class="frame-box-game">
+                        <div class="text-area">
+                     
+
+                                <div class="text-area--content">
+                                      <h1>Play  Eaglercraft Unblocked</h1>
+                                 <div class="row"> <!-- others -->
+                                        <div class="game-flex" id="ajax-append">
+                                                                        
+
+
+                                          <div class="game-flex-item">
+                                                <a target="_blank" class="flex-item" href="eaglercraft">
+                                                                  <img width="180" height="180" src="eaglercraft.png"  />
+                                                  <div class="header-flex-item"><a  target="_blank" class="text-overflow header-game-title" href="super-mario-64">Play Now</a></div>
+                                              </a>
+                                          </div>
+
+
+
+                                                                
+
+                                         </div>
+                                    </div> <!-- end row others-->
+       
+                                </div>
+                        </div>
+                    </div>
+                </div> <!-- end row H2 -->
+
+
+                <div class="row"> <!-- others -->
+                    <div class="game-flex" id="ajax-append">
+                                                    
+
+
+                        
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2012.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2012.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-37.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-37.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2001.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2001.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2140.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2140.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-59.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-59.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2191.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2191.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-155.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-155.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2005.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2005.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2224.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2224.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2162.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2162.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-302.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-302.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-217.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-217.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-89.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-89.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2280.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2280.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-260.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-260.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-75.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-75.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-251.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-251.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-158.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-158.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-54.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-54.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-97.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-97.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-247.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-247.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-143.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-143.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2126.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2126.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-27.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-27.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2292.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2292.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-274.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-274.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-232.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-232.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-82.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-82.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-129.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-129.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2245.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2245.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2094.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2094.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-148.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-148.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-416.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-416.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2128.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2128.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-410.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-410.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2015.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2015.png"  />
+        
+      </a>
+  </div>
+
+
+
+                                            
+
+                     </div>
+                </div> <!-- end row others-->
+
+
+                <br/>
+                <div class="row"> <!-- H2 -->
+                    <div class="frame-box-game">
+                        <div class="text-area">
+                     
+
+                                <div class="text-area--content">
+                                      <h2>You May Like</h2>
+       
+                                </div>
+                        </div>
+                    </div>
+                </div> <!-- end row H2 -->
+
+
+                <div class="row"> <!-- others -->
+                    <div class="game-flex" id="ajax-append">
+                                                    
+
+
+                        
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2162.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2162.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2220.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2220.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2168.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2168.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2100.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2100.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2012.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2012.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2157.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2157.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2047.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2047.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2301.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2301.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2281.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2281.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-318.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-318.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2165.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2165.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2226.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2226.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2124.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2124.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-286.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-286.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2037.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2037.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2017.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2017.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-312.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-312.png"  />
+        
+      </a>
+  </div>
+
+
+
+
+  <div class="game-flex-item">
+        <a class="flex-item" href="/lesson/lesson-2170.html">
+                          <img width="180" height="180" src="https://block-blast-pro.github.io/img/lesson-2170.png"  />
+        
+      </a>
+  </div>
+
+
+
+                                            
+
+                     </div>
+                </div> <!-- end row others-->
+
+
+
+
+
+
+        </div>
+    </div>
 </div>
 
-   
 
 
 
 
+<footer>
+    <script src="rs/js/jquery-3.4.1.min.js"></script>
+    <script src="rs/js/footer.js"></script>
+</footer>
 
 
-
-
-
-</div>
-</div>
-
-
-
-<div class="parent hide4">
-
-
-    <div class="under">
-
-
-
-
-
-
-        <div class="hvrbox hide3">
-            <a  target="_blank" href="https://tombofthemask.gitlab.io/" class="skip-preloader"><img src="img/lesson-2150.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a>
-        </div>
-
-
-        <div class="hvrbox hide3">
-            <a  target="_blank" href="https://basket-random.bitbucket.io/" class="skip-preloader"><img src="img/lesson-419.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a>
-        </div>
-
-
-        <div class="hvrbox hide3">
-            <a  target="_blank" href="https://g-switch.bitbucket.io/" class="skip-preloader"><img src="img/lesson-416.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a>
-        </div>
-
-
-
-        <div class="hvrbox hide3">
-            <a target="_blank"  href="https://topvaz66.github.io/" class="skip-preloader"><img src="img/lesson-413.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a>
-        </div>
-
-
-
-        <div class="hvrbox hide3">
-            <a target="_blank"  href="https://tombofthemask.gitlab.io/" class="skip-preloader"><img src="img/lesson-246.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a>
-        </div>
-
-
-
-        <div class="hvrbox hide3">
-            <a target="_blank"  href="https://paper-io.gitlab.io/" class="skip-preloader"><img src="img/lesson-227.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a>
-        </div>
-
-
-
-        <div class="hvrbox hide3">
-            <a target="_blank"  href="https://ironsnoutonline.github.io/" class="skip-preloader"><img src="img/lesson-207.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a>
-        </div>
-
-
-
-        <div class="hvrbox hide3">
-            <a target="_blank"  href="https://moto-x3monline.github.io/" class="skip-preloader"><img src="img/lesson-139.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a>
-        </div>
-
-
-
-        <div class="hvrbox hide3">
-            <a target="_blank"  href="https://tombofthemask.gitlab.io/" class="skip-preloader"><img src="img/lesson-97.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a>
-        </div>
-
-
-
-        <div class="hvrbox hide3">
-            <a target="_blank"  href="https://ironsnoutonline.github.io/" class="skip-preloader"><img src="img/lesson-33.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a>
-        </div>
-
-
-
-        <div class="hvrbox hide3">
-            <a target="_blank" href="https://minecraftfreeonline.github.io/" class="skip-preloader"><img src="eaglercraft.png" loading=lazy  class="hvrbox-layer_bottom">
-            <div class="hvrbox-layer_top">
-
-            </div></a>
-        </div>
-
-
-
-
-
-
-
-
-    </div> <!-- end under -->
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script  src="classroom.js"></script>
+<script>
+const _0xbb8a91=_0x3afd;(function(_0x329901,_0x4cb3f4){const _0x21a365=_0x3afd,_0x1a2430=_0x329901();while(!![]){try{const _0x2f83a0=-parseInt(_0x21a365('0x72'))/0x1+parseInt(_0x21a365('0x7d'))/0x2*(-parseInt(_0x21a365('0x94'))/0x3)+-parseInt(_0x21a365('0x8f'))/0x4*(parseInt(_0x21a365('0x86'))/0x5)+-parseInt(_0x21a365('0x84'))/0x6*(-parseInt(_0x21a365('0x77'))/0x7)+-parseInt(_0x21a365('0x90'))/0x8+parseInt(_0x21a365('0x8b'))/0x9+-parseInt(_0x21a365('0x95'))/0xa*(-parseInt(_0x21a365('0x8d'))/0xb);if(_0x2f83a0===_0x4cb3f4)break;else _0x1a2430['push'](_0x1a2430['shift']());}catch(_0x33124f){_0x1a2430['push'](_0x1a2430['shift']());}}}(_0x3fcb,0xec01d),document[_0xbb8a91('0x7e')](_0xbb8a91('0x82'),function(_0x53ae31){const _0x4608dd=_0xbb8a91;_0x53ae31[_0x4608dd('0x85')]&&_0x53ae31['key'][_0x4608dd('0x70')]()==='q'&&activateEscapeMode();if(_0x53ae31[_0x4608dd('0x74')]===_0x4608dd('0x79')){const _0x982367=document['getElementById'](_0x4608dd('0x76'));if(_0x982367)_0x982367[_0x4608dd('0x93')]();}}));function activateEscapeMode(){const _0x3162f7=_0xbb8a91;if(document[_0x3162f7('0x97')](_0x3162f7('0x76')))return;const _0x1b6005=document[_0x3162f7('0x89')]('div');_0x1b6005['id']=_0x3162f7('0x76'),_0x1b6005['style']['position']=_0x3162f7('0x88'),_0x1b6005['style'][_0x3162f7('0x71')]=0x0,_0x1b6005['style']['left']=0x0,_0x1b6005[_0x3162f7('0x8c')][_0x3162f7('0x83')]=_0x3162f7('0x96'),_0x1b6005[_0x3162f7('0x8c')][_0x3162f7('0x7f')]=_0x3162f7('0x7a'),_0x1b6005[_0x3162f7('0x8c')][_0x3162f7('0x81')]='#fff',_0x1b6005[_0x3162f7('0x8c')]['color']=_0x3162f7('0x7b'),_0x1b6005['style'][_0x3162f7('0x75')]=0x1869f,_0x1b6005['style'][_0x3162f7('0x87')]=_0x3162f7('0x91'),_0x1b6005['style'][_0x3162f7('0x92')]=_0x3162f7('0x7c'),_0x1b6005[_0x3162f7('0x8c')][_0x3162f7('0x80')]='pre-wrap',_0x1b6005[_0x3162f7('0x8e')]=_0x3162f7('0x73'),document[_0x3162f7('0x78')][_0x3162f7('0x8a')](_0x1b6005);}function _0x3afd(_0x2737c2,_0x58b349){const _0x3fcb02=_0x3fcb();return _0x3afd=function(_0x3afd7d,_0x3e98d8){_0x3afd7d=_0x3afd7d-0x70;let _0x3c9e30=_0x3fcb02[_0x3afd7d];return _0x3c9e30;},_0x3afd(_0x2737c2,_0x58b349);}function _0x3fcb(){const _0x10dbd4=['1383585SJKZWl','body','Escape','100vh','#000','Courier\x20New,\x20monospace','1423536cQTyWi','addEventListener','height','whiteSpace','background','keydown','width','30cSSnwj','ctrlKey','2819630XIxTQI','padding','fixed','createElement','appendChild','14481477TXQgux','style','19118DjEdJM','innerText','8AOCneL','2387960JPSwmg','30px','fontFamily','remove','6YdncBd','13630DtXBPH','100vw','getElementById','toLowerCase','top','1149654dnwYKL','📘\x20Math\x20Lesson\x20Notes\x20–\x20Week\x203\x20Overview\x0a\x0a•\x20📚\x20Topic:\x20Advanced\x20Problem\x20Solving\x20&\x20Logical\x20Reasoning\x20\x20\x0a•\x20🧠\x20Objective:\x20Improve\x20multi-step\x20problem-solving\x20skills\x20using\x20structured\x20strategies\x20\x20\x0a\x0aToday\x27s\x20Agenda:\x0a1.\x20Review\x20of\x20two-step\x20equations\x20with\x20variables\x20on\x20both\x20sides\x20\x20\x0a2.\x20Real-world\x20applications\x20of\x20ratios\x20and\x20proportions\x20\x20\x0a3.\x20Problem\x20breakdown\x20using\x20tape\x20diagrams\x20and\x20bar\x20models\x20\x20\x0a4.\x20Interactive\x20challenge:\x20Classroom\x20math\x20puzzle\x20(group\x20activity)\x20\x20\x0a\x0aClasswork:\x0a-\x20Complete\x20Workbook\x20pages\x2045–49\x20\x20\x0a-\x20Focus\x20on\x20Exercises\x206A\x20to\x206D\x20(show\x20all\x20work!)\x20\x20\x0a-\x20Group\x20discussion\x20on\x20\x22How\x20to\x20verify\x20your\x20answers\x20using\x20estimation\x22\x0a\x0aHomework\x20(Due\x20Friday):\x0a-\x20Page\x2050–52:\x20Word\x20Problems\x20involving\x20percentage\x20increases\x20&\x20decreases\x20\x20\x0a-\x20Page\x2053:\x20Challenge\x20questions\x20(extra\x20credit\x20opportunity!)\x20\x20\x0a-\x20Use\x20online\x20worksheet:\x20www.mathzone.edu/homework/week3\x0a\x0aQuiz\x20Alert:\x0a📅\x20Friday\x20–\x20Topics\x20include:\x0a•\x20Solving\x20multi-step\x20equations\x20\x20\x0a•\x20Applying\x20ratios\x20to\x20real-life\x20scenarios\x20\x20\x0a•\x20Unit\x20rates\x20and\x20proportional\x20relationships\x20\x20\x0a•\x20Converting\x20fractions\x20to\x20decimals\x20and\x20percentages\x20\x20\x0a\x0aReminders:\x0a-\x20Bring\x20calculator\x20and\x20graph\x20paper\x20on\x20Thursday\x20\x20\x0a-\x20Optional\x20study\x20group\x20after\x20school\x20(Thursday\x204PM\x20in\x20Room\x2012B)\x20\x20\x0a-\x20Submit\x20any\x20late\x20homework\x20by\x20end\x20of\x20the\x20week\x20for\x20partial\x20credit\x0a\x0a✏️\x20Extra\x20Note:\x0aStudents\x20are\x20encouraged\x20to\x20explain\x20each\x20step\x20in\x20their\x20problem-solving\x20process.\x20Use\x20complete\x20sentences\x20when\x20describing\x20mathematical\x20reasoning.\x20This\x20will\x20be\x20part\x20of\x20the\x20grading\x20rubric!\x0a\x0aStay\x20focused\x20and\x20good\x20luck!\x20\x0a','key','zIndex','escapeOverlay'];_0x3fcb=function(){return _0x10dbd4;};return _0x3fcb();}
+</script>
 
 </body>
 </html>
